@@ -1,0 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+.poster {
+    text-align: center;
+    margin-top: 150px;
+}
