@@ -35,6 +35,20 @@
 </head>
 
 <body>
+
+<!-- connection with database -->
+    <?php
+        $db = mysqli_connect('localhost', 'root', '', 'tubelight');
+        if($db){
+            // echo 'connect';
+        }
+        else{
+            echo 'database not connect';
+        }
+    ?>
+<!-- connection with database -->
+
+
     <div class="container-xxl position-relative bg-white d-flex p-0">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -49,7 +63,7 @@
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-light navbar-light">
                 <a href="dashboard.php" class="navbar-brand mx-4 mb-3">
-                    <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>DASHMIN</h3>
+                    <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>SOUMY</h3>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
                     <div class="position-relative">
@@ -67,8 +81,8 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa-solid fa-gear"></i>Categories</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="" class="dropdown-item">View all categories</a>
-                            <a href="" class="dropdown-item">Add a category</a>
+                            <a href="viewallcategory.php" class="dropdown-item">View all categories</a>
+                            <a href="addcategory.php" class="dropdown-item">Add a category</a>
                         </div>
                     </div>
 
